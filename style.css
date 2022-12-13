@@ -11,12 +11,15 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(254, 188, 176);
 }
 
 h1 {
     font-family: 'Satisfy', cursive;
     font-size: 70px;
 }
+
+
 
 .sapin {
     display: flex;
@@ -118,6 +121,7 @@ h1 {
     left: 43%;
     width: 25px;
     height: 25px;
+    background-color: rgb(0, 171, 187);
 }
 
 .boule#b3 {
@@ -125,38 +129,61 @@ h1 {
     left: 63%;
     width: 25px;
     height: 25px;
+    background-color: rgba(222, 251, 0, 0.737);
 }
 
 .boule#b4 {
     top: 69%;
     left: 43%;
+    background-color: rgba(217, 0, 251, 0.737);
 }
 
 .boule#b5 {
     top: 30%;
     left: 53%;
+    background-color: rgba(251, 0, 134, 0.737);
 }
 
 .boule#b6 {
     top: 52%;
     left: 58%;
+    background-color: rgba(40, 253, 125, 0.737);
 }
 
 .boule#b7 {
     top: 45%;
     left: 50%;
+    background-color: rgba(251, 0, 0, 0.737);
 }
 
 .boule#b8 {
     top: 60%;
     left: 53%;
+    background-color: rgba(251, 0, 142, 0.737);
 }
 
 .boule#b9 {
     top: 30%;
     left: 48%;
+    background-color: rgba(251, 125, 0, 0.737);
 }
 .boule#b10 {
     top: 63%;
     left: 48%;
+    background-color: rgba(251, 100, 0, 0.737);
+}
+
+
+.fa-droplet {
+    color: rgb(160, 160, 160);
+    position: absolute;
+    top: -20px;
+    animation: fall linear forwards;
+}
+
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
 }
