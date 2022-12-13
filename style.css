@@ -11,12 +11,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(254, 188, 176);
+    background-color: #000;
 }
 
 h1 {
     font-family: 'Satisfy', cursive;
     font-size: 70px;
+    color: #fff;
 }
 
 
@@ -174,10 +175,12 @@ h1 {
 }
 
 
-.fa-droplet {
+
+.fa-snowflake {
     color: rgb(160, 160, 160);
     position: absolute;
     top: -20px;
+    width: 0%;
     animation: fall linear forwards;
 }
 
@@ -186,4 +189,52 @@ h1 {
     to {
         transform: translateY(105vh);
     }
+}
+
+
+
+.gift {
+    width: 360px;
+    height: 240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-180px, -120px);
+}
+
+.box {
+    position: absolute;
+    border-radius: 16px;
+    bottom: 0;
+}
+
+#box1 {
+    width: 200px;
+    height: 140px;
+    z-index: 20;
+    background: linear-gradient(
+        to right,
+        transparent 36%,
+        #FD0 36%,
+        #FD0 46%,
+        transparent 46%,
+    ), linear-gradient(
+        #F00 43%,
+        #FD0 43%,
+        #FD0 57%,
+        #F00 57%,
+    );
+}
+
+#box2 {
+    width: 200px;
+    height: 200px;
+    left: 160px;
+    z-index: 30;
+    background: linear-gradient(
+        to right,
+        transparent 36%,
+        #FD0 36%,
+        #FD0 46%,
+    );
 }
