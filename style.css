@@ -3,3 +3,238 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    color: #fff;
+}
+
+
+
+.sapin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.etage {
+    height: 100px;
+    width: 250px;
+    background-color: #006400;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.etage:nth-of-type(1){
+    height: 40px;
+    width: 70px;
+    transform: translateY(340%);
+}
+
+.etage:nth-of-type(2){
+    height: 100px;
+    width: 170px;
+    transform: translateY(120%);
+}
+
+.etage:nth-of-type(3){
+    height: 170px;
+    width: 300px;
+    transform: translateY(50%);
+}
+
+.etage:nth-of-type(4){
+    height: 200px;
+    width: 450px;
+    transform: translateY(10%);
+}
+
+.bas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tronc {
+    width: 60px;
+    height: 100px;
+    background-color: #642d00;
+}
+
+.cadeaux {
+    display: flex;
+    justify-content: center;
+}
+
+.cadeaux img {
+    width: 20%;
+    transform: translateY(-35%);
+}
+
+.deco {
+    position: absolute;
+    z-index: 10;
+    display: block;
+}
+
+.etoile {
+    background-color: #fffb00;
+    height: 50px;
+    width: 50px;
+    top: 105px;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}
+
+
+.boule {
+    background-color: #ec2121;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 52%;
+    left: 42%;
+}
+
+.boule#b2 {
+    top: 34%;
+    left: 43%;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 171, 187);
+}
+
+.boule#b3 {
+    top: 68%;
+    left: 63%;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(222, 251, 0, 0.737);
+}
+
+.boule#b4 {
+    top: 69%;
+    left: 43%;
+    background-color: rgba(217, 0, 251, 0.737);
+}
+
+.boule#b5 {
+    top: 30%;
+    left: 53%;
+    background-color: rgba(251, 0, 134, 0.737);
+}
+
+.boule#b6 {
+    top: 52%;
+    left: 58%;
+    background-color: rgba(40, 253, 125, 0.737);
+}
+
+.boule#b7 {
+    top: 45%;
+    left: 50%;
+    background-color: rgba(251, 0, 0, 0.737);
+}
+
+.boule#b8 {
+    top: 60%;
+    left: 53%;
+    background-color: rgba(251, 0, 142, 0.737);
+}
+
+.boule#b9 {
+    top: 30%;
+    left: 48%;
+    background-color: rgba(251, 125, 0, 0.737);
+}
+.boule#b10 {
+    top: 63%;
+    left: 48%;
+    background-color: rgba(251, 100, 0, 0.737);
+}
+
+
+
+.fa-snowflake {
+    color: rgb(160, 160, 160);
+    position: absolute;
+    top: -20px;
+    width: 0%;
+    animation: fall linear forwards;
+}
+
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+
+
+.gift {
+    width: 360px;
+    height: 240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-180px, -120px);
+}
+
+.box {
+    position: absolute;
+    border-radius: 16px;
+    bottom: 0;
+}
+
+#box1 {
+    width: 200px;
+    height: 140px;
+    z-index: 20;
+    background: linear-gradient(
+        to right,
+        transparent 36%,
+        #FD0 36%,
+        #FD0 46%,
+        transparent 46%,
+    ), linear-gradient(
+        #F00 43%,
+        #FD0 43%,
+        #FD0 57%,
+        #F00 57%,
+    );
+}
+
+#box2 {
+    width: 200px;
+    height: 200px;
+    left: 160px;
+    z-index: 30;
+    background: linear-gradient(
+        to right,
+        transparent 36%,
+        #FD0 36%,
+        #FD0 46%,
+    );
+}
