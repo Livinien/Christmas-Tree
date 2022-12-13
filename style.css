@@ -78,3 +78,85 @@ h1 {
     width: 20%;
     transform: translateY(-35%);
 }
+
+.deco {
+    position: absolute;
+    z-index: 10;
+    display: block;
+}
+
+.etoile {
+    background-color: #fffb00;
+    height: 50px;
+    width: 50px;
+    top: 105px;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}
+
+
+.boule {
+    background-color: #ec2121;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 52%;
+    left: 42%;
+}
+
+.boule#b2 {
+    top: 34%;
+    left: 43%;
+    width: 25px;
+    height: 25px;
+}
+
+.boule#b3 {
+    top: 68%;
+    left: 63%;
+    width: 25px;
+    height: 25px;
+}
+
+.boule#b4 {
+    top: 69%;
+    left: 43%;
+}
+
+.boule#b5 {
+    top: 30%;
+    left: 53%;
+}
+
+.boule#b6 {
+    top: 52%;
+    left: 58%;
+}
+
+.boule#b7 {
+    top: 45%;
+    left: 50%;
+}
+
+.boule#b8 {
+    top: 60%;
+    left: 53%;
+}
+
+.boule#b9 {
+    top: 30%;
+    left: 48%;
+}
+.boule#b10 {
+    top: 63%;
+    left: 48%;
+}
